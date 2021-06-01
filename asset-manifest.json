@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/test-app/static/css/main.1d1c7336.chunk.css",
+    "main.js": "/test-app/static/js/main.fde464f3.chunk.js",
+    "main.js.map": "/test-app/static/js/main.fde464f3.chunk.js.map",
+    "runtime-main.js": "/test-app/static/js/runtime-main.0e3f4d09.js",
+    "runtime-main.js.map": "/test-app/static/js/runtime-main.0e3f4d09.js.map",
+    "static/js/2.ce201de9.chunk.js": "/test-app/static/js/2.ce201de9.chunk.js",
+    "static/js/2.ce201de9.chunk.js.map": "/test-app/static/js/2.ce201de9.chunk.js.map",
+    "static/js/3.0c12ec0f.chunk.js": "/test-app/static/js/3.0c12ec0f.chunk.js",
+    "static/js/3.0c12ec0f.chunk.js.map": "/test-app/static/js/3.0c12ec0f.chunk.js.map",
+    "index.html": "/test-app/index.html",
+    "static/css/main.1d1c7336.chunk.css.map": "/test-app/static/css/main.1d1c7336.chunk.css.map",
+    "static/js/2.ce201de9.chunk.js.LICENSE.txt": "/test-app/static/js/2.ce201de9.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/test-app/static/media/GothamPro.774ec39b.woff",
+    "static/media/style.scss": "/test-app/static/media/vector-features.4bb0642d.svg",
+    "static/media/arrow-left.2c50597e.svg": "/test-app/static/media/arrow-left.2c50597e.svg",
+    "static/media/arrow-right.dfd1151d.svg": "/test-app/static/media/arrow-right.dfd1151d.svg",
+    "static/media/burger-cross.759896c6.svg": "/test-app/static/media/burger-cross.759896c6.svg",
+    "static/media/burger-spans.37007edd.svg": "/test-app/static/media/burger-spans.37007edd.svg",
+    "static/media/dashboard-logo-tab.0b51214d.svg": "/test-app/static/media/dashboard-logo-tab.0b51214d.svg",
+    "static/media/icon-email.068aa31d.svg": "/test-app/static/media/icon-email.068aa31d.svg",
+    "static/media/icon-marker.a0e87991.svg": "/test-app/static/media/icon-marker.a0e87991.svg",
+    "static/media/icon-phone.950f95fb.svg": "/test-app/static/media/icon-phone.950f95fb.svg",
+    "static/media/icon-skype.d08dfb61.svg": "/test-app/static/media/icon-skype.d08dfb61.svg",
+    "static/media/projects-88team-mob.cb64738d.svg": "/test-app/static/media/projects-88team-mob.cb64738d.svg",
+    "static/media/projects-beebongo-mob.8d0bf921.svg": "/test-app/static/media/projects-beebongo-mob.8d0bf921.svg",
+    "static/media/projects-btc-mob.e96a22f3.svg": "/test-app/static/media/projects-btc-mob.e96a22f3.svg",
+    "static/media/projects-kings-mob.4b60c033.svg": "/test-app/static/media/projects-kings-mob.4b60c033.svg",
+    "static/media/projects-qteam-mob.80d6d983.svg": "/test-app/static/media/projects-qteam-mob.80d6d983.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0e3f4d09.js",
+    "static/js/2.ce201de9.chunk.js",
+    "static/css/main.1d1c7336.chunk.css",
+    "static/js/main.fde464f3.chunk.js"
+  ]
+}
