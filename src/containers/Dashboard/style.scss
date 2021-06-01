@@ -1,0 +1,27 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-image: url('../../assets/dashboard-mob.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  &-logo {
+    padding: 0 58px;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .dashboard {
+    background-image: url('../../assets/dashboard-tab.png');
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .dashboard {
+    background-image: url('../../assets/dashboard-dt.png');
+  }
+}

@@ -1,0 +1,151 @@
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5% 10%;
+
+  &-heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    p {
+      font-family: Gilroy-Regular, sans-serif;
+      color: #FFFFFF;
+      text-align: center;
+      margin-bottom: 40px;
+      max-width: 716px;
+    }
+
+    & h1 {
+      font-family: Gilroy-Heavy, sans-serif;
+      font-weight: 900;
+      font-size: 36px;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      text-align: center;
+      z-index: 2;
+      position: relative;
+    }
+
+    & h1::before {
+      content: url("../../assets/aboutUs-vector.svg");
+      position: absolute;
+      top: 30px;
+      left: -30px;
+      z-index: -1;
+    }
+  }
+
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(1, 290px);
+  grid-template-rows: repeat(4, minmax(333px, 368px));
+  gap: 25px 0;
+  grid-template-areas:
+    "abstraction"
+    "money"
+    "player"
+    "world";
+
+  &-item {
+    display: flex;
+    align-items: flex-end;
+    max-height: 440px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    color: #FFFFFF;
+    font-size: 22px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    padding: 0 16px;
+
+    &-text {
+      font-family: Gilroy-Heavy, sans-serif;
+      font-weight: 900;
+      margin-block-start: 0;
+    }
+  }
+}
+
+.abstraction {
+  grid-area: abstraction;
+  background-image: url("../../assets/about-sport-desctop.png");
+
+}
+
+.money {
+  grid-area: money;
+  background-image: url("../../assets/about-bets-desctop.png");
+}
+
+.player {
+  grid-area: player;
+  background-image: url("../../assets/about-predictions-desctop.png");
+}
+
+.world {
+  grid-area: world;
+  background-image: url("../../assets/about-world-desctop.png");
+}
+
+@media screen and (min-width: 768px) {
+  .aboutUs {
+    &-heading-container {
+      & h1 {
+        font-size: 52px;
+      }
+      & h1::before {
+        top: 35px;
+        left: 40px;
+      }
+
+      p {
+        margin-bottom: 80px;
+      }
+    }
+  }
+
+  .cards-container {
+    grid-template-columns: repeat(2, 333px);
+    grid-template-rows: repeat(2, 368px);
+    grid-template-areas:
+    "abstraction money"
+    "player world";
+    gap: 30px 18px;
+
+    &-item {
+      height: 368px;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .aboutUs {
+    height: 100vh;
+
+    &-heading-container {
+      p {
+        margin-bottom: 74px;
+      }
+    }
+  }
+  .cards-container {
+    grid-template-columns: repeat(4, 288px);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "abstraction money player world";
+    gap: 0 16px;
+
+    &-item {
+      height: 440px;
+    }
+  }
+}

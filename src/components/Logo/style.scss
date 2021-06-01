@@ -1,0 +1,12 @@
+.tycoon-logo-container {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1920px) {
+  .tycoon-logo-container {
+    justify-content: flex-start;
+  }
+}

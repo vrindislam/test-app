@@ -1,0 +1,45 @@
+.indicator {
+  display: flex;
+  position: fixed;
+  top: 40%;
+  right: 80px;
+  color: #FFFFFF;
+
+  &-pagination {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: space-around;
+    height: 280px;
+    margin-right: 32px;
+
+    &-item {
+      font-size: 18px;
+      font-weight: bold;
+      font-family: Gilroy-Bold, sans-serif;
+      list-style-type: none;
+      cursor: pointer;
+
+      &-desc {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &-bar {
+    background: #FFFFFF80;
+    height: 300px;
+    width: 3px;
+  }
+}
+
+.page-marker {
+  display: block;
+  width: 3px;
+  height: 60px;
+}
+
+.page-marker.active {
+  background-color: #FFFFFF;
+}
