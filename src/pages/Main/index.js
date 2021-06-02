@@ -6,9 +6,10 @@ import NavFooter from "../../containers/NavFooter";
 import Projects from "../../containers/Projects";
 import './style.scss'
 import Features from "../../containers/Features";
-import Indicator from "../../components/Indicator";
+// import Indicator from "../../components/Indicator";
 import Contact from "../../containers/Contact";
-// import Fullpage from "./FullPage";
+import Fullpage from "./FullPage";
+import ContactsIndicator from "../../components/ContactsIndicator";
 
 const Main = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -28,14 +29,22 @@ const Main = () => {
   }, []);
   return (
     <section className='main'>
-      {width > 1919 && <Indicator scrollPos={scrollPosition}/>}
-      <Dashboard/>
-      <AboutUs/>
-      <Features/>
-      <Projects/>
-      <Contact/>
-      <NavFooter/>
-      <Footer/>
+      {width > 1919 ?
+        <>
+          {/*<Indicator scrollPos={scrollPosition}/>*/}
+          <ContactsIndicator/>
+          <Fullpage/>
+        </>
+        :
+        <>
+          <Dashboard/>
+          <AboutUs/>
+          <Features/>
+          <Projects/>
+          <Contact/>
+          {/*<NavFooter width={width}/>*/}
+        </>
+      }
     </section>
   );
 };

@@ -1,0 +1,61 @@
+//override styles for fullpage.js
+#fp-nav ul li a.active span {
+  background-color: #fff;
+  height: 60px;
+  width: 3px;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+}
+#fp-nav ul li a.active span:hover {
+  background-color: #fff;
+  height: 60px;
+  width: 3px;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#fp-nav ul li a span {
+  background-color: #FFFFFF80;
+  height: 60px;
+  width: 3px;
+  border-radius: 0;
+  margin: 0;
+}
+
+#fp-nav ul li {
+  pointer-events: none;
+}
+
+#fp-nav ul li, .fp-slidesNav ul li {
+  margin: 0;
+}
+
+#fp-nav.fp-right {
+  right: 75px;
+}
+
+#fp-nav {
+  top: 55%;
+}
+
+#fp-nav ul li {
+  height: 60px;
+}
+
+.fp-right .fp-show-active {
+  //top: 50px;
+  right: 100px;
+}
+
+#fp-nav ul li .fp-tooltip {
+  top: 50px;
+}
+
+#fp-nav ul li .fp-tooltip.fp-right {
+  font-family: Gilroy-Medium, sans-serif;
+  font-weight: 700;
+  right: 34px;
+  font-size: 18px;
+}

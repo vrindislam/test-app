@@ -7,14 +7,14 @@ import MouseScroller from "../../components/MouseScroller";
 import ContactsIndicator from "../../components/ContactsIndicator";
 
 const Dashboard = () => {
-  const width = window.innerWidth
+
   return (
-    <div className='dashboard'>
+    <div className='dashboard' id='dashboard'>
       <div className='dashboard-logo'><Logo/></div>
       <DashboardTitle/>
       <NavBar/>
-      {width > 767 && <ContactsIndicator/>}
-      {width > 1919 && <MouseScroller/>}
+      <ContactsIndicator className='hidden'/>
+      <MouseScroller/>
     </div>
   );
 };

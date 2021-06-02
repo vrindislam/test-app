@@ -1,11 +1,12 @@
+.contacts-indicator {
+  &-text {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .contacts-indicator {
     display: flex;
     justify-content: center;
-
-    &-text {
-      display: none;
-    }
 
     &-telegram::before {
       content: url("../../assets/telegram-white.svg");
@@ -29,14 +30,14 @@
 @media screen and (min-width: 1920px) {
   .contacts-indicator {
 
-    position: fixed;
+    position: absolute;
     top: 45%;
     left: 80px;
     flex-direction: column;
     height: 200px;
     justify-content: space-between;
     align-items: center;
-    z-index: 3;
+    z-index: 100;
 
     &-text {
       font-family: Gilroy-Bold, sans-serif;
@@ -49,5 +50,8 @@
     &-telegram::before {
       margin-right: 0;
     }
+  }
+  .hidden {
+    display: none;
   }
 }

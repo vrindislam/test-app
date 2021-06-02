@@ -77,7 +77,7 @@ const Features = () => {
         :
         <div className="features-slider-wrap">
           <Slider {...settings}>
-            <div className='features-slide-container'>
+            <div className='features1-slide-container'>
               <div className='card'>
                 <div className='card-background research'>
                   <span>Research</span>
@@ -89,7 +89,7 @@ const Features = () => {
                 </div>
               </div>
             </div>
-            <div className='features-slide-container'>
+            <div className='features1-slide-container'>
               <div className='card'>
                 <div className='card-background analytics'>
                   <span>Data Analytics</span>
@@ -102,7 +102,7 @@ const Features = () => {
                 </div>
               </div>
             </div>
-            <div className='features-slide-container'>
+            <div className='features1-slide-container'>
               <div className='card'>
                 <div className='card-background execution'>
                   <span>Execution</span>

@@ -3,6 +3,12 @@
   justify-content: center;
   z-index: 1;
   cursor: pointer;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  & li {
+    list-style-type: none;
+  }
 }
 
 @media screen and (min-width: 1920px) {

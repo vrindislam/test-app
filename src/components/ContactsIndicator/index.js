@@ -1,9 +1,10 @@
 import React from 'react';
 import './style.scss';
 
-const ContactsIndicator = () => {
+const ContactsIndicator = ({className}) => {
+
   return (
-    <div className='contacts-indicator'>
+    <div className={`contacts-indicator ${className}`} >
       <span className='contacts-indicator-text'>Follow us</span>
       {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
       <a className='contacts-indicator-telegram' href="https://t.me/tycoon_bet" target='_blank' rel="noreferrer"/>

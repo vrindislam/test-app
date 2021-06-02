@@ -1,10 +1,12 @@
 import React from 'react';
 import Logo from "../../components/Logo";
-import {Link} from "react-scroll";
 import './style.scss'
+import Footer from "../Footer";
 
 const NavFooter = () => {
+  const width = window.innerWidth
   return (
+    <div className='footer-wrap'>
     <div className='nav-footer'>
       <div className='nav-footer-logo-container'>
         <Logo/>
@@ -14,14 +16,14 @@ const NavFooter = () => {
         <div className='nav-footer-mob-wrap'>
           <h3 className='nav-footer-link-wrap-heading'>Navigation</h3>
           <div className='nav-footer-link-wrap'>
-            <div className='nav-footer-link-wrap-navlinks'>
-              <Link smooth='true' className='nav-footer-link-wrap-navlinks-item' to="about-us"><p className='item-text'>About Us</p></Link>
-              <Link smooth='true' className='nav-footer-link-wrap-navlinks-item' to="features"><p className='item-text'>Features</p></Link>
-            </div>
-            <div className='nav-footer-link-wrap-navlinks'>
-              <Link smooth='true' className='nav-footer-link-wrap-navlinks-item' to="projects"><p className='item-text'>Partners</p></Link>
-              <Link smooth='true' className='nav-footer-link-wrap-navlinks-item' to="contact"><p className='item-text'>Contact</p></Link>
-            </div>
+            <ul className='nav-footer-link-wrap-navlinks'>
+              <li data-menuanchor="about-us1"><a className='nav-footer-link-wrap-navlinks-item' href={width > 1919 ? '#about-us1' : '#about-us'}><p className='item-text'>About Us</p></a></li>
+              <li data-menuanchor="features1"><a className='nav-footer-link-wrap-navlinks-item' href={width > 1919 ? '#features1' : '#features'}><p className='item-text'>Features</p></a></li>
+            </ul>
+            <ul className='nav-footer-link-wrap-navlinks'>
+              <li data-menuanchor="projects1"><a className='nav-footer-link-wrap-navlinks-item' href={width > 1919 ? '#projects1' : '#projects'}><p className='item-text'>Partners</p></a></li>
+              <li data-menuanchor="contact1"><a className='nav-footer-link-wrap-navlinks-item' href={width > 1919 ? '#contact1' : '#contact'}><p className='item-text'>Contact</p></a></li>
+            </ul>
           </div>
         </div>
         <div className='nav-footer-social-media'>
@@ -34,6 +36,8 @@ const NavFooter = () => {
               CHAT</p></a>
         </div>
       </div>
+    </div>
+      <Footer/>
     </div>
   );
 };

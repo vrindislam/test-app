@@ -6,6 +6,16 @@
   color: white;
   padding: 53px 0;
 
+  &-link-wrap-navlinks {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    & li {
+      list-style-type: none;
+      width: 90px;
+    }
+  }
+
   &-logo-container {
     display: flex;
     flex-direction: column;
@@ -104,7 +114,6 @@
 
 @media screen and (min-width: 768px) {
   .nav-footer {
-    padding: 79px 0;
 
     &-link-wrap {
       width: 200px;
@@ -130,7 +139,7 @@
 
 @media screen and (min-width: 1920px) {
   .nav-footer {
-    padding: 67px 0;
+    padding: 30px 0;
     flex-direction: row;
     justify-content: space-evenly;
 

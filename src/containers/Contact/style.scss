@@ -1,5 +1,4 @@
 .contact {
-
   &-background {
     display: flex;
     flex-direction: column;
@@ -118,11 +117,11 @@
     }
 
     &-background {
-      padding: 0 5%;
+      padding: 0 5% 245px 5%;
       background-image: url("../../assets/contact-bg-tablet.png");
       &-map {
         width: 572px;
-        padding: 27px 29px;
+        padding: 23px 25px;
       }
     }
   }
@@ -145,9 +144,16 @@
 }
 
 @media screen and (min-width: 1920px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
   .contact {
 
     &-background {
+      padding: 0 5% 0 5%;
+      height: 60vh;
       background-image: url("../../assets/contact-bg-desctop.png");
       &-map {
         width: 1200px;
